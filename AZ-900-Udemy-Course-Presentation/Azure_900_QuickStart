@@ -1,0 +1,70 @@
+Regions and Zones:
+=================
+
+- Region is specific geographical location to host your resources.
+- We can have multiple regions for high latency.
+- Eg: We can one "Region" in central america, and one in east and one it west.
+- In each region, we can have multiple data center which is called as "Zones"
+- Each Zones has independent power , networking & connectivity.
+- Zones in a regions are connected through low-latency links.
+
+
+Azure Virtual Machines:
+=======================
+
+- Virtual servers in Azure
+- Features:
+    - create and manage lifecyle of VM
+    - load balancing and auto scaling.
+    - attach storage to your VM
+    - Manage network connectivity and configuration.
+
+Image     - Operating System and software
+VM Family - family of hardware (general purposed, compute/ storage optimized, GPU, HPC)
+VM Size   - Inside each VM family variety of hardware configuration available.
+Disks     - By default disk attached to the VM which has OS
+
+Increase Availability for VM:
+  - Single Instance VM:
+       - Premium SSD or Ultra Disk : 99.9%
+       - Standard SSD 99.5%
+       - Standard HDD 95%
+
+  - Two or more instance in same Availability Set(logical group of VM) : 99.95%
+
+  - Two or more instance in two or more AZ in the same Azure region : 99.99%
+
+Availability Set:
+   - Logical Grouping of VM
+   - Fault Domains : Group of VMs sharing a common power source and network switch.
+   - Update Domains: Group of VMs that are rebooted at the same time.
+
+
+
+
+Create New VM:
+
+    - In Azure portal , search Virtual Machine.
+    - Select subscription.
+    - Resource group will be group of resource such as database, queue, VM.
+       For same project , use smae resource group.
+    - Select VM size.
+    - Select Http and ssh for inbound network port
+    - Click create
+
+
+Login to VM:
+
+  chmod 400 my-first-vm_key.pem
+  ssh -i my-first-vm_key.pem azureuser@20.213.185.159
+
+Install software in VM:
+  sudo su
+  apt-get -y update
+  apt-get -y install nginx
+  Open Browser and type 20.213.185.159:80
+
+
+  echo "Hello World" > /var/www/html/index.html
+  Open Browser and type 20.213.185.159:80
+

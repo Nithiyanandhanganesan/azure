@@ -1,0 +1,67 @@
+Azure is cloud computing platform owned by Microsoft.
+AWS owned by Amazon.
+GCP owned by Google.
+
+https://azure.microsoft.com/
+
+nithiganesan@pec.edu
+
+
+Azure Core Concepts:
+=====================
+
+
+Compute Services:
+------------------
+   - Azure Virtual Machine
+       -> Windown or Linux VM hosted in Azure
+
+   - Azure Virtual Machine Scale Sets
+       -> Scaling for Windows or Linux VM hosted in azure
+
+   - Azure Kubernetes Service
+       -> Cluster management for VM that run containeriezed services.
+
+   - Azure Service Fabric
+       -> Distributed system platform that run sin Azure or on-premises
+
+   - Azure Batch
+       -> Managed service for parallel and high performance computing application.
+
+   - Azure Container Instances
+       -> Containerized apps run on azure without provisioning servers or VM
+
+   - Azure Functions
+       -> event-driven , serverless compute service
+
+
+
+Cloud Storage
+   -
+
+
+Networking:
+------------
+
+   - Azure Virtual Network
+
+
+App Hosting
+   - run web application on managed platform.
+
+
+AI
+  - run machine learning
+
+IoT
+
+Integration
+  - workflow orchestration.
+
+
+Security
+  -
+
+
+
+
